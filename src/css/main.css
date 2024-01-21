@@ -1,3 +1,81 @@
 @import "variables.css";
 @import "base.css";
 @import "components/hero.css";
+
+:root {
+    /* Globale Variablen, falls benötigt */
+  }
+  
+  /* Baseline Styles */
+  body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  .header {
+    background-image: url('../images/coffee.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 75vh; /* Basishöhe für Mobilgeräte */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+  
+  .header-content {
+    z-index: 1;
+    color: white;
+    text-align: center;
+  }
+  
+  .store-button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .store-button:hover,
+  .store-button:focus {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Media Queries für die gesamte Website */
+  @media (min-width: 576px) {
+    /* Anpassungen für kleine Geräte */
+  }
+  
+  @media (min-width: 768px) {
+    /* Anpassungen für mittlere Geräte */
+    .header {
+      height: 65vh; /* Anpassung der Header-Höhe für Tablets und aufwärts */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    /* Anpassungen für große Geräte */
+  }
+  
+  @media (min-width: 1200px) {
+    /* Anpassungen für extra große Geräte */
+  }
+  
+  @media (min-width: 1920px) {
+    /* Anpassungen für sehr große Desktop-Geräte */
+  }
+  
