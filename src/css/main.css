@@ -54,6 +54,18 @@
     background-color: white;
     color: black;
   }
+
+  .map-container {
+    height: 75vh; /* oder eine spezifische Höhe, die Sie für den Header verwenden */
+    width: 100%;
+    margin-top: 20px; /* Abstand nach dem Header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  
   
   /* Media Queries für die gesamte Website */
   @media (min-width: 576px) {
@@ -78,4 +90,6 @@
   @media (min-width: 1920px) {
     /* Anpassungen für sehr große Desktop-Geräte */
   }
+
+  
   
