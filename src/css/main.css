@@ -1,6 +1,7 @@
 @import "variables.css";
 @import "base.css";
 @import "components/hero.css";
+@import "components/header.css";
 
 body,
 h1,
@@ -35,11 +36,6 @@ a {
   z-index: 0;
 }
 
-.header-content {
-  z-index: 1;
-  color: white;
-  text-align: center;
-}
 
 .store-button {
   background-color: transparent;

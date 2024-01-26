@@ -1,0 +1,9 @@
+.header-content {
+    z-index: 1;
+    color: white;
+    text-align: center;
+  }
+
+  .header-content > h1 {
+    font-size: 64px;
+  }
