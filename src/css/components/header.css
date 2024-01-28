@@ -1,37 +1,45 @@
-.header-content {
-  z-index: 1;
-  color: white;
-  text-align: center;
-}
-
-.header-content > h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 64px;
-}
-
 .header {
-  background-image: url("../images/coffee.jpg");
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  height: 75vh; /* Basishöhe für Mobilgeräte */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: url("../images/FEND-Coffee-latte-art-3.png");
+  text-align: center;
+  height: 75vh;
 }
 
-
-.store-button {
-  background-color: transparent;
-  border: 2px solid white;
+.title {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
   color: white;
-  padding: 10px 20px;
-  cursor: pointer;
-  align-items: flex-end;
+  font-size: 64px;
+  position: absolute;
+  bottom: 56.4%;
+  margin-bottom: 20px;
 }
 
-.store-button:hover,
-.store-button:focus {
-  background-color: white;
-  color: black;
+.subtitle {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  bottom: 54%;
 }
+
+.shop_button_div {
+  width: 100%;
+  position: absolute;
+  bottom: 35%;
+}
+
+.shop_button {
+  width: 168px;
+  height: 52px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background: black;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+/* Hover Effekt fehlt noch */

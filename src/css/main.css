@@ -1,48 +1,8 @@
 @import "variables.css";
 @import "base.css";
 @import "components/hero.css";
-@import "components/header.css";
+@import "../css/components/header.css";
 
-body,
-h1,
-h2,
-h3,
-p,
-a {
+body {
   margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-
-.map-container {
-  height: 75vh; /* oder eine spezifische Höhe, die Sie für den Header verwenden */
-  width: 100%;
-  margin-top: 20px; /* Abstand nach dem Header */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Media Queries für die gesamte Website */
-@media (min-width: 576px) {
-  /* Anpassungen für kleine Geräte */
-}
-
-@media (min-width: 768px) {
-  /* Anpassungen für mittlere Geräte */
-  .header {
-    height: 65vh; /* Anpassung der Header-Höhe für Tablets und aufwärts */
-  }
-}
-
-@media (min-width: 992px) {
-  /* Anpassungen für große Geräte */
-}
-
-@media (min-width: 1200px) {
-  /* Anpassungen für extra große Geräte */
-}
-
-@media (min-width: 1920px) {
-  /* Anpassungen für sehr große Desktop-Geräte */
 }
