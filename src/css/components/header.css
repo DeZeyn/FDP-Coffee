@@ -1,13 +1,15 @@
 .header {
-  background: url("../images/FEND-Coffee-latte-art-3.png");
+  background-image: url("../images/FEND-Coffee-latte-art-3.png");
+  background-size: cover;
+  background-position: center;
   text-align: center;
   height: 75vh;
 }
 
 .title {
   width: 100%;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-heading);
   color: white;
   font-size: 64px;
   position: absolute;
@@ -17,7 +19,7 @@
 
 .subtitle {
   width: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family);
   font-weight: 400;
   color: white;
   font-size: 18px;

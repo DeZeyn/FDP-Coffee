@@ -1,5 +1,5 @@
 body {
-  background: grey;
+  background: white;
 
   @media (min-width: 768px) {
     color: red;
@@ -11,7 +11,7 @@ main {
   max-width: 100%;
 
   & div {
-    color: yellow;
+    color: black;
 
     @media (min-width: 768px) {
       color: var(--div-color);
@@ -25,5 +25,14 @@ img {
 }
 
 h2 {
-  font-size: var(--h2-font-size);
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  size: 36px;
+}
+
+p,
+li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  size: 14px;
 }
