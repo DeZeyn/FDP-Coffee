@@ -1,0 +1,36 @@
+.Beschreibung {
+    margin: 50px 25px;
+  
+  }
+  
+  .Liste_Adresse {
+    display: flex;
+    justify-content: left;
+  }
+  
+  .Liste_Adresse_Liste {
+    list-style: none;
+    padding-left: 0px;
+    padding-right: 20px;
+  }
+  
+  .coffee_shop_png__div {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  .coffee_shop_png {
+    width: 241px;
+    height: auto;
+  
+  }
+  
+  .coffee_plant_png__div {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+  .coffee_plant_png {
+    width: 241px;
+    height: auto;
+  }
