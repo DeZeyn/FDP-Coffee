@@ -1,0 +1,36 @@
+.Herkunft {
+  background-image: url(../../images/FEND-Coffee-bags-2.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 20.75rem;
+}
+
+.Herkunft div {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  align-items: center;
+}
+
+.Herkunft h3,
+.Herkunft p {
+  color: var(--color-white);
+  font-family: var(--font-family);
+  font-size: 2rem;
+  font-weight: var(--font-weight-normal);
+}
+
+.Herkunft h3 {
+  margin: 2rem 0 0 0;
+  font-weight: var(--font-weight-heading);
+}
+
+.Herkunft p {
+  font-size: 0.875rem;
+}
