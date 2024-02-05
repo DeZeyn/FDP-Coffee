@@ -1,0 +1,37 @@
+.was__steckt__drin {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  height: 37.75rem;
+}
+
+.was__steckt__drin h2 {
+  font-family: var(--font-family);
+  font-size: 2.25rem;
+  font-weight: var(--font-weight-heading);
+}
+
+.was__steckt__drin_bild {
+  max-width: 13.375rem;
+  height: auto;
+}
+
+.was__steckt__drin__merkmale {
+    margin: 2rem 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Erstellt drei Spalten mit gleicher Breite */
+  grid-template-rows: auto auto; /* Zwei Reihen, deren Höhe sich nach dem Inhalt richtet */
+  gap: 20px; /* Definiert den Abstand zwischen den Spalten und Reihen */
+}
+
+.was__steckt__drin__merkmale > div {
+  display: flex;
+  flex-direction: column; /* Richtet die Inhalte der einzelnen Merkmale (Bild und Text) vertikal aus */
+  align-items: center; /* Zentriert die Inhalte horizontal */
+}

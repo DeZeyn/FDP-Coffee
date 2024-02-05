@@ -1,45 +1,54 @@
 .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
   background-image: url("../images/FEND-Coffee-latte-art-3.png");
   background-size: cover;
   background-position: center;
-  text-align: center;
-  height: 75vh;
+  height: 31.25rem;
+}
+
+.title_subtitle {
+  width: 100%;
 }
 
 .title {
-  width: 100%;
   font-family: var(--font-family);
   font-weight: var(--font-weight-heading);
   color: white;
-  font-size: 64px;
-  position: absolute;
-  bottom: 56.4%;
-  margin-bottom: 20px;
+  font-size: 4rem;
+  margin: 0;
 }
 
 .subtitle {
-  width: 100%;
   font-family: var(--font-family);
-  font-weight: 400;
+  font-weight: var(--font-weight-normal);
   color: white;
-  font-size: 18px;
-  position: absolute;
-  bottom: 54%;
+  font-size: 1.125rem;
+  margin: 0;
 }
 
-.shop_button_div {
-  width: 100%;
-  position: absolute;
-  bottom: 35%;
+#spacer__top {
+  flex-grow: 4;
+}
+
+#spacer__middle {
+  flex-grow: 2;
+}
+
+#spacer__bottom {
+  flex-grow: 1;
 }
 
 .shop_button {
-  width: 168px;
-  height: 52px;
+  width: 10.5rem;
+  height: 3.25rem;
   font-family: "Roboto", sans-serif;
   color: white;
   background: black;
-  font-size: 18px;
+  font-size: 1.125rem;
   border-radius: 5px;
   border: 2px solid black;
 }
