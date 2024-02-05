@@ -7,6 +7,9 @@
 @import "../css/components/Shop__Seite.css";
 @import "../css/components/herkunft.css";
 @import "../css/components/wasstecktdrin.css";
+@import "../css/components/kommvorbei.css";
+@import "../css/components/footer.css";
+
 
 body {
   margin: 0;
