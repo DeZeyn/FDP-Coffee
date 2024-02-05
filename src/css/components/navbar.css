@@ -1,6 +1,6 @@
 .mobile__nav {
   display: flex;
-  position: fixed;
+  position: absolute;
   align-items: center;
   width: 100%;
   height: 55px;

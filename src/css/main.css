@@ -8,3 +8,64 @@
 body {
   margin: 0;
 }
+
+.Shop__Seite {
+  background-color: var(--color-anthrazit); /* Hintergrundfarbe auf Schwarz setzen */
+  color: var(--color-white); /* Textfarbe auf Weiß setzen */
+  display: grid; /* Grid Layout verwenden */
+  grid-template-columns: repeat(2, 1fr); /* Zwei Spalten mit gleicher Breite */
+  gap: 20px; /* Abstand zwischen den Grid-Items */
+  padding: 20px; /* Innenabstand */
+}
+
+.Shop__Seite__Überschrift {
+  grid-column: 1 / -1; /* Überschrift über beide Spalten strecken */
+  text-align: left; /* Überschrift zentrieren */
+  font-size: 36px;
+  font-weight: var(--font-weight-heading);
+  line-height: var(--line-height-heading);
+}
+
+.Shop__Seite__Main {
+  display: flex; /* Flexbox für die Anordnung der Elemente innerhalb eines Shop__Seite__Main-Containers */
+  flex-direction: column; /* Elemente vertikal anordnen */
+  align-items: right; /* Elemente zentrieren */
+}
+
+.Shop__Seite__Main p {
+  margin: 0;
+  color: var(--color-white);
+}
+
+#Shop__Seite__Main__Preis {
+  color: var(--color-medium-grey);
+}
+
+#Shop__Seite__Main__Name {
+  margin-top: 1rem;
+}
+
+.Shop__Seite__Main__Verpackungsbild {
+  width: 100%; /* Bild auf volle Container-Breite setzen */
+  max-width: 200px; /* Maximale Breite des Bildes beschränken */
+}
+
+.Shop__Seite__Main__Symbole__Container {
+  display: flex;
+  gap: 10px; /* Abstand zwischen den Symbolen */
+}
+
+
+
+.Shop__Seite__Main_button {
+  grid-column: 1 / -1; /* Button über beide Spalten strecken */
+  justify-self: center; /* Button im Grid zentrieren */
+  padding: 15px 50px; /* Innenabstand des Buttons */
+  background-color: var(--color-anthrazit); /* Hintergrundfarbe des Buttons */
+  color: var(--color-white); /* Textfarbe des Buttons */
+  cursor: pointer; /* Cursor beim Hover über den Button ändern */
+  border: 3px solid var(--color-white);
+  border-radius: 5px;
+  
+
+}
