@@ -17,9 +17,14 @@
   --h3-font-size: 42px;
   --body-text-font-szie: 18px;
 
+  --h1-m-font-size: 64px;
+  --h2-m-font-size: 36px;
+  --h3-m-font-size: 32px;
+  --body-text-m-font-szie: 14px;
+
   --font-weight-normal: 400;
   --font-weight-heading: 900;
-  
+
   --line-height-body: 1.3;
   --line-height-heading: 1.1;
 }
