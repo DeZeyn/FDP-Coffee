@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Das Cafe</title>
+    {{> head}}
+  </head>
+  <body>
+    {{> navbar}} {{> header }}
+    <main>
+      <article class="Beschreibung">
+        <h2>Rösterei & Cafe</h2>
+        <p>
+          Kaffee aus Kiel direkt gehandelt und geröstet in der eigenen Rösterei,
+          serviert im gemütlichen Cafe in der Innenstadt
+        </p>
+        <div class="Liste_Adresse">
+          <ul class="Liste_Adresse_Liste">
+            <li>Komm uns besuchen!</li>
+            <li>Frauenhoferstr. 13, Kiel</li>
+          </ul>
+          <ul class="Liste_Adresse_Liste">
+            <li>Mo - Fr 8-18 Uhr</li>
+            <li>Sa 11-18 Uhr</li>
+          </ul>
+        </div>
+        <div class="coffee_shop_png__div">
+          <img
+            class="coffee_shop_png"
+            src="../images/FEND-Coffee-machine-2.png"
+            alt="Bild von Cafemaschine"
+          />
+        </div>
+      </article>
+
+      <article class="Beschreibung">
+        <h2>Frisches Gebäck von nebenan</h2>
+        <p>
+          Als es die ersten Hügel des Kursivgebirges erklommen hatte, warf es
+          einen letzten Blick zurück auf die Skyline seiner Heimatstadt
+          Buchstabhausen, die Headline von Alphabetdorf. Wehmütig lief ihm eine
+          rhetorische Frage über die Wange, dann setzte es seinen Weg fort.
+          Unterwegs traf es eine Copy. Die Copy warnte das Blindtextchen, da, wo
+          sie herkäme wäre sie zigmal umgeschrieben worden und alles, was von
+          ihrem Ursprung noch übrig wäre, sei das Wort "und" und das
+          Blindtextchen solle umkehren und wieder in sein eigenes, sicheres Land
+          zurückkehren.
+        </p>
+      </article>
+
+      <div class="gallery">
+        <img src="../images/FEND-Coffee-latte-art-2.png" alt="">
+        <img src="../images/FEND-danish 1.png" alt="">
+        
+      </div>
+      {{> komm-vorbei}}
+    </main>
+    {{> footer}}
+    <script src="../src/js/index.js"></script>
+  </body>
+</html>

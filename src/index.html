@@ -4,33 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index Page</title>
-    <link rel="stylesheet" href="/css/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Oregano"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+    {{> head}}
   </head>
   <body>
     {{> navbar}}
-    <header class="header">
-      <div id="spacer__top"></div>
-      <div class="title_subtitle">
-        <h1 class="title">Rustica</h1>
-        <h2 class="subtitle">Bio und Fair seit 1991</h2>
-      </div>
-      <div id="spacer__middle"></div>
 
-      <button class="shop_button">zum Shop</button>
-
-      <div id="spacer__bottom"></div>
-    </header>
+    {{> header}}
     <main>
       <article class="Beschreibung">
         <h2>Rösterei & Cafe</h2>
@@ -229,43 +208,9 @@
         </div>
       </article>
 
-      <article class="komm__vorbei">
-        <h2>Komm vorbei</h2>
-        <iframe
-          class="custom-map-frame"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=10.119615197181703%2C54.340874529698866%2C10.124872326850893%2C54.342850904439096&amp;layer=mapnik&amp;marker=54.34186272894648%2C10.122243762016296"
-        ></iframe>
-      </article>
+      {{> komm-vorbei}}
     </main>
-    <footer class="footer_mobile">
-      <img
-        class="footer_mobile_logo"
-        src="./images/Logo.svg"
-        alt="Logo vom Cafe"
-      />
-      <h2>Rustica</h2>
-      <h3>Cafe Rösterei</h3>
-      <div>
-        <div>
-          <p>Komm uns besuchen!</p>
-          <p>Frauenhoferstr. 13, Kiel</p>
-        </div>
-        <div>
-          <p>Mo - Fr 8-18 Uhr</p>
-          <p>Sa 11-18 Uhr</p>
-        </div>
-
-        <div>
-          <p>Impressum</p>
-          <p>Frauenhoferstr. 13, Kiel</p>
-        </div>
-        <div>
-          <p>Cafe</p>
-          <p>Shop</p>
-          <p>Herkunft</p>
-        </div>
-      </div>
-    </footer>
+    {{> footer}}
     <script src="../src/js/index.js"></script>
   </body>
 </html>

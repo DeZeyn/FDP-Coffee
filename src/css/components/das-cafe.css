@@ -1,0 +1,10 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Erzeugt zwei Spalten mit gleicher Breite */
+    grid-auto-rows: auto; /* Stellt sicher, dass die Höhe der Zeilen auf den Inhalt basiert */
+    grid-gap: 10px; /* Abstand zwischen den Bildern */
+  }
+  .gallery img {
+    width: 100%; /* Stellt sicher, dass die Bilder ihre Spalte ausfüllen, ohne ihre Proportionen zu verlieren */
+    height: auto; /* Behält die ursprüngliche Form der Bilder bei */
+  }
