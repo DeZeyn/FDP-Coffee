@@ -1,10 +1,25 @@
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Erzeugt zwei Spalten mit gleicher Breite */
-    grid-auto-rows: auto; /* Stellt sicher, dass die Höhe der Zeilen auf den Inhalt basiert */
-    grid-gap: 10px; /* Abstand zwischen den Bildern */
-  }
-  .gallery img {
-    width: 100%; /* Stellt sicher, dass die Bilder ihre Spalte ausfüllen, ohne ihre Proportionen zu verlieren */
-    height: auto; /* Behält die ursprüngliche Form der Bilder bei */
-  }
+.gallery-container {
+  width: 20.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Abstand zwischen den Spalten */
+  margin: 0 auto;
+}
+.column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Abstand zwischen den Bildern */
+}
+.column img {
+  width: 100%; /* Passt die Breite der Bilder an den Container an */
+  height: auto; /* Behält das Seitenverhältnis der Bilder bei */
+}
+
+#das-cafe__header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../images/FEND-Coffee-shop.png");
+  background-size: cover;
+  background-position: center;
+  height: 20.75rem;
+}

@@ -1,0 +1,7 @@
+#herkunft__header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../images/FEND-Coffee-beans-hand-2.png");
+  background-size: cover;
+  background-position: center;
+  height: 20.75rem;
+}
