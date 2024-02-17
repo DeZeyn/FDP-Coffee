@@ -1,9 +1,22 @@
 <nav class="mobile__nav">
   <div class="svg-container">
-    <img class="logo__mobile" src="../images/Logo.svg" alt="Logo der Rösterei" />
+    <img
+      class="logo__mobile"
+      src="../images/Logo.svg"
+      alt="Logo der Rösterei"
+    />
   </div>
   <div class="navbar__mitte"></div>
-  <div class="burger__menu">
-    <img src="../images/Burger Menu.svg" alt="Auswahlmenü" />
+  <!-- Checkbox hinzufügen -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+  <!-- Verwende das Label für das Burger-Menü mit Hintergrundbild -->
+  <label for="menu-toggle" class="burger__menu"></label>
+  <!-- Verstecktes Div mit Links -->
+  <div class="menu-content">
+    <ul>
+      <li><a href="../sub-page/das-cafe.html">das Cafe</a></li>
+      <li><a href="../sub-page/herkunft.html">Herkunft</a></li>
+      <li><a href="#shop">Shop</a></li>
+    </ul>
   </div>
 </nav>

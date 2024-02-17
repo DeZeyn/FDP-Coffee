@@ -20,8 +20,57 @@
 }
 
 .burger__menu {
-  height: 12.5px;
-  width: auto;
+  background-image: url('../images/Burger Menu.svg');
+  background-size: 1.9rem 1rem; /* Spezifische Größenangabe */
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  height: 0.78125rem; /* Stelle sicher, dass diese Höhe genügend Platz bietet */
+  width: 1.46875rem; /* Stelle sicher, dass diese Breite genügend Platz bietet */
+  cursor: pointer;
+  padding: 0.25rem;
+  margin-right: 0.9375rem;
   filter: invert(100%);
-  margin-right: 15px;
+}
+
+
+
+.menu-toggle:checked + .burger__menu {
+  background-image: url('../images/Burger Menu close.svg'); /* Bild wechseln, wenn Checkbox aktiviert ist */
+  z-index: 15;
+}
+
+.menu-toggle {
+  display: none; /* Macht die Checkbox unsichtbar */
+}
+
+.menu-content {
+  display: none; /* Standardmäßig ist das Menü unsichtbar */
+  position: absolute;
+  width: 100%;
+  background-color: var(--color-anthrazit); /* Hintergrundfarbe des Menüs */
+  left: 0;
+}
+
+.menu-toggle:checked + .burger__menu + .menu-content {
+  display: block; /* Zeigt das Menü an, wenn die Checkbox ausgewählt ist */
+}
+
+.menu-content ul {
+  list-style-type: none; /* Entfernt Bulletpoints */
+  padding: 0; /* Entfernt den Standard-Padding */
+  z-index: 20;
+}
+
+.menu-content li {
+  padding: 10px 0; /* Fügt vertikalen Abstand zwischen den Links hinzu */
+  z-index: 20;
+}
+
+.menu-content a {
+  color: var(--color-white); /* Setze die Farbe auf Rot, um die Sichtbarkeit zu testen */
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  z-index: 20;
 }
