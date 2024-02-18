@@ -19,58 +19,81 @@
   filter: invert(100%);
 }
 
-.burger__menu {
-  background-image: url('../images/Burger Menu.svg');
-  background-size: 1.9rem 1rem; /* Spezifische Größenangabe */
-  background-repeat: no-repeat;
-  background-position: center;
-  display: inline-block;
-  height: 0.78125rem; /* Stelle sicher, dass diese Höhe genügend Platz bietet */
-  width: 1.46875rem; /* Stelle sicher, dass diese Breite genügend Platz bietet */
-  cursor: pointer;
-  padding: 0.25rem;
-  margin-right: 0.9375rem;
+.navigation__checkbox {
+  display: none;
+}
+/* Stile für den Navigationsschalter */
+.navigation__button {
+  background-image: url("../images/Burger Menu.svg");
   filter: invert(100%);
+  background-size: 24px 16px; /* Setzt die Größe des Hintergrundbildes entsprechend den ursprünglichen SVG-Abmessungen */
+  background-repeat: no-repeat; /* Verhindert das Wiederholen des Bildes */
+  background-position: center; /* Zentriert das Bild im Element */
+  width: 24px; /* Breite des Elements entsprechend der Breite des SVG */
+  height: 16px; /* Höhe des Elements entsprechend der Höhe des SVG */
+  display: inline-block; /* Ermöglicht die Anwendung von Breite und Höhe */
+  cursor: pointer; /* Zeigt an, dass es klickbar ist */
+  /* position: absolute;  Bleibt an der festen Position */
+  margin-right: 15px;
+  margin-top: 5px;
+  top: 20px; /* Abstand von oben */
+  right: 20px; /* Abstand von rechts */
+  z-index: 2000; /* Stellt sicher, dass es über anderen Elementen liegt */
 }
 
-
-
-.menu-toggle:checked + .burger__menu {
-  background-image: url('../images/Burger Menu close.svg'); /* Bild wechseln, wenn Checkbox aktiviert ist */
-  z-index: 15;
+.navigation__button img {
+  filter: invert(100%);
+  width: 30px; /* Größe des Burger-Menü-Symbols anpassen */
+  height: auto; /* Höhe automatisch anpassen, um das Seitenverhältnis zu bewahren */
 }
 
-.menu-toggle {
-  display: none; /* Macht die Checkbox unsichtbar */
+/* Vollbild-Navigationsmenü */
+.navigation__nav {
+  height: 100vh;
+  width: 0%;
+  position: fixed;
+  background-color: var(--color-anthrazit); /* Hintergrundfarbe */
+  top: 0;
+  right: 0;
+  z-index: 1500;
+  opacity: 0; /* Standardmäßig versteckt */
+  transition: opacity 0.5s ease; /* Sanfte Übergangsanimation */
 }
 
-.menu-content {
-  display: none; /* Standardmäßig ist das Menü unsichtbar */
+.navigation__list {
   position: absolute;
-  width: 100%;
-  background-color: var(--color-anthrazit); /* Hintergrundfarbe des Menüs */
-  left: 0;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  list-style: none;
+  text-align: left;
 }
 
-.menu-toggle:checked + .burger__menu + .menu-content {
-  display: block; /* Zeigt das Menü an, wenn die Checkbox ausgewählt ist */
-}
-
-.menu-content ul {
-  list-style-type: none; /* Entfernt Bulletpoints */
-  padding: 0; /* Entfernt den Standard-Padding */
-  z-index: 20;
-}
-
-.menu-content li {
-  padding: 10px 0; /* Fügt vertikalen Abstand zwischen den Links hinzu */
-  z-index: 20;
-}
-
-.menu-content a {
-  color: var(--color-white); /* Setze die Farbe auf Rot, um die Sichtbarkeit zu testen */
+.navigation__list a {
+  display: inline-block;
   text-decoration: none;
-  display: block;
-  padding: 10px;
-  z-index: 20;
+  font-family: var(--font-family);
+  font-size: var(--h3-m-font-size);
+  font-weight: var(--font-weight-heading);
+  padding: 1rem 0;
+  color: white;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: #fff; /* Farbe der Links, weiß für bessere Sichtbarkeit */
+}
+
+/* Anzeigen des Navigationsmenüs, wenn die Checkbox markiert ist */
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1; /* Menü sichtbar machen */
+  width: 100%;
+}
+
+.navigation__checkbox:checked ~ .navigation__button {
+  background-image: url("../../images/Burger\ Menu\ close.svg"); /* Pfad zum Bild für den "geschlossenen" Zustand */
+  position: fixed;
+  top: 15px;
+  right: 0px;
 }
