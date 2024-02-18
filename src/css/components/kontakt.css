@@ -1,0 +1,44 @@
+body {
+    background-color: white;
+}
+
+.kontakt .mobile__nav {
+    top: 0;
+    left: 0;
+}
+
+.kontakt .logo__mobile {
+    filter: none;
+    
+}
+
+.kontakt .navigation__button {
+    filter: none;
+}
+
+.kontakt .navigation__checkbox:checked ~ .navigation__button {
+    filter: invert(100%);
+}
+
+.kontakt-content {
+    margin-top: 10rem;
+    padding: 0 2rem;
+}
+.kontakt-content h2 {
+    font-family: var(--font-family);
+    font-size: var(--h2-m-font-size);
+    font-weight: var(--font-weight-heading);
+}
+
+.kontakt-content h3 {
+    font-family: var(--font-family);
+    font-size: var(--h3-m-font-size);
+    font-weight: var(--font-weight-heading);
+}
+
+.kontakt-content p {
+    font-family: var(--font-family);
+    font-size: var(--body-text-m-font-size);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-body);
+}
