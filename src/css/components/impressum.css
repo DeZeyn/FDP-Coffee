@@ -1,0 +1,44 @@
+body {
+    background-color: white;
+}
+
+.impressum .mobile__nav {
+    top: 0;
+    left: 0;
+}
+
+.impressum .logo__mobile {
+    filter: none;
+    
+}
+
+.impressum .navigation__button {
+    filter: none;
+}
+
+.impressum .navigation__checkbox:checked ~ .navigation__button {
+    filter: invert(100%);
+}
+
+.impressum-content {
+    margin-top: 10rem;
+    padding: 0 2rem;
+}
+.impressum-content h2 {
+    font-family: var(--font-family);
+    font-size: var(--h2-m-font-size);
+    font-weight: var(--font-weight-heading);
+}
+
+.impressum-content h3 {
+    font-family: var(--font-family);
+    font-size: var(--h3-m-font-size);
+    font-weight: var(--font-weight-heading);
+}
+
+.impressum-content p {
+    font-family: var(--font-family);
+    font-size: var(--body-text-m-font-size);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-body);
+}
