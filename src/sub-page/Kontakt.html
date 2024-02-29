@@ -53,14 +53,43 @@
             />
           </div>
           <div class="form__group">
-            <label for="subject">Dein Betreff</label>
-            <select id="subject" class="form__select" required>
-              <option value="">Bitte wählen...</option>
-              <option value="lieferung">Fragen zur Lieferung</option>
-              <option value="produkt">Fragen zum Produkt</option>
-              <option value="vertrieb">Vertriebsfragen</option>
-              <option value="sonstiges">Einfach nur so!</option>
-            </select>
+            <ul class="dropdown">
+              <li id="dropdown-label" class="dropdown__label">Label</li>
+
+              <li
+                role="button"
+                aria-labelledby="dropdown-label"
+                id="dropdown__selected"
+                tabindex="0"
+              >
+                Option 1
+              </li>
+
+              <svg
+                class="dropdown__arrow"
+                width="10"
+                height="5"
+                viewBox="0 0 10 5"
+                fill-rule="evenodd"
+              >
+                <title>Open drop down</title>
+                <path d="M10 0L5 5 0 0z"></path>
+              </svg>
+              <li
+                aria-expanded="false"
+                role="list"
+                class="dropdown__list-container"
+              >
+                <ul class="dropdown__list">
+                  <li class="dropdown__list-item" tabindex="0" id="option-1">
+                    Option 1
+                  </li>
+                  <li class="dropdown__list-item" tabindex="0" id="option-2">
+                    Option 2 is really longgggggggggggggggg
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
           <div class="form__group">
             <label for="message">Deine Nachricht</label>
