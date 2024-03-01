@@ -33,16 +33,7 @@
               required
             />
           </div>
-          <div class="form__group">
-            <label for="name" class="form__label">Name</label>
-            <input
-              type=""
-              class="form__input"
-              placeholder="Name"
-              id="name"
-              required
-            />
-          </div>
+
           <div class="form__group">
             <label for="phone" class="form__label">Telefonnummer</label>
             <input
@@ -53,50 +44,29 @@
             />
           </div>
           <div class="form__group">
-            <ul class="dropdown">
-              <li id="dropdown-label" class="dropdown__label">Label</li>
-
-              <li
-                role="button"
-                aria-labelledby="dropdown-label"
-                id="dropdown__selected"
-                tabindex="0"
-              >
-                Option 1
-              </li>
-
-              <svg
-                class="dropdown__arrow"
-                width="10"
-                height="5"
-                viewBox="0 0 10 5"
-                fill-rule="evenodd"
-              >
-                <title>Open drop down</title>
-                <path d="M10 0L5 5 0 0z"></path>
-              </svg>
-              <li
-                aria-expanded="false"
-                role="list"
-                class="dropdown__list-container"
-              >
-                <ul class="dropdown__list">
-                  <li class="dropdown__list-item" tabindex="0" id="option-1">
-                    Option 1
-                  </li>
-                  <li class="dropdown__list-item" tabindex="0" id="option-2">
-                    Option 2 is really longgggggggggggggggg
-                  </li>
+            <div class="dropdown">
+              <button class="dropdown__button">
+                Dein Menü
+                <span class="dropdown__icon"
+                  ><img src="../images/Button hell.svg" alt=""
+                /></span>
+              </button>
+              <div class="dropdown__content">
+                <ul>
+                  <li><a href="#">Fragen zur Lieferung</a></li>
+                  <li><a href="#">Fragen zum Produkt</a></li>
+                  <li><a href="#">Vertriebsfragen</a></li>
+                  <li><a href="#">einfach nur so!</a></li>
                 </ul>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
           <div class="form__group">
             <label for="message">Deine Nachricht</label>
             <textarea
               id="message"
-              class="form__textarea"
-              placeholder="Schreibe hier deine Nachricht..."
+              class="form__input"
+              placeholder="Was hast du auf dem Herzen?"
               required
             ></textarea>
           </div>
