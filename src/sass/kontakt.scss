@@ -77,10 +77,24 @@ body {
 
   &__icon {
     float: right;
+    transition: transform 0.3s;
+
+    &.rotate {
+      transform: rotate(180deg);
+    }
   }
 
   &__content {
-    display: none;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+    max-height: 0;
+
+    &.show {
+        max-height: 500px;
+        border: 2px solid black;
+        border-radius: 3px;
+        margin: 0.5rem 0;
+    }
 
     ul {
       list-style: none;
@@ -94,13 +108,5 @@ body {
         color: black;
       }
     }
-  }
-
-  &:hover &__content {
-    display: block;
-  }
-
-  &:active &__content {
-    display: block;
   }
 }
