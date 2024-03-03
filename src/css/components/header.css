@@ -44,6 +44,9 @@
 }
 
 .shop_button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 10.5rem;
   height: 3.25rem;
   font-family: "Roboto", sans-serif;
@@ -52,6 +55,8 @@
   font-size: 1.125rem;
   border-radius: 5px;
   border: 2px solid black;
+  text-decoration: none;
+  text-align: center;
 }
 
 /* Hover Effekt fehlt noch */

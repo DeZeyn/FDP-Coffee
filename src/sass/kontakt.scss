@@ -1,5 +1,7 @@
 body {
   background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .kontakt {
@@ -21,19 +23,19 @@ body {
     margin-top: 10rem;
     padding: 0 2rem;
 
-    .h2 {
+    h2 {
       font-family: var(--font-family);
-      font-size: var(--h2-m-font-size);
       font-weight: var(--font-weight-heading);
+      font-size: var(--h2-m-font-size);
     }
 
-    .h3 {
+    h3 {
       font-family: var(--font-family);
       font-size: var(--h3-m-font-size);
       font-weight: var(--font-weight-heading);
     }
 
-    .p {
+    p {
       font-family: var(--font-family);
       font-size: var(--body-text-m-font-size);
       font-weight: var(--font-weight-normal);
@@ -45,10 +47,17 @@ body {
 .form {
   &__group {
     margin: 2rem 0;
+
+    label {
+      font-family: var(--font-family);
+      font-size: var(--body-text-m-font-size);
+      font-weight: var(--font-weight-normal);
+      line-height: var(--line-height-body);
+    }
   }
 
   &__input {
-    width: 20rem;
+    width: 19rem;
     height: 2.5rem;
     border: none;
     border-bottom: solid black 3px;
@@ -56,10 +65,22 @@ body {
   }
 
   &__label {
+    font-family: var(--font-family);
+    font-size: var(--body-text-m-font-size);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-body);
+  }
+
+  &__input {
+    padding: 0 0 0 1rem;
   }
 
   #message {
-    padding: 3rem 0;
+    font-family: var(--font-family);
+    font-size: var(--body-text-m-font-size);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-body);
+    padding: 3rem 0 3rem 1rem;
   }
 }
 
@@ -69,15 +90,21 @@ body {
   &__button {
     width: 20rem;
     height: 3rem;
+    padding: 0 0 0 1rem;
     border: none;
     text-align: left;
     background-color: var(--color-anthrazit);
     color: white;
+    font-family: var(--font-family);
+    font-size: var(--body-text-m-font-size);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-body);
   }
 
   &__icon {
     float: right;
     transition: transform 0.3s;
+    margin: 0 1rem 0 0;
 
     &.rotate {
       transform: rotate(180deg);
@@ -90,23 +117,30 @@ body {
     max-height: 0;
 
     &.show {
-        max-height: 500px;
-        border: 2px solid black;
-        border-radius: 3px;
-        margin: 0.5rem 0;
+      max-height: 500px;
+      border: 2px solid black;
+      border-radius: 3px;
+      margin: 0.5rem 0;
     }
 
     ul {
       list-style: none;
-      margin: 0;
-      padding: 0;
+      padding-inline-start: 0;
     }
 
     li {
+        padding: 0.5rem 0 0.5rem 1rem;
       a {
         text-decoration: none;
         color: black;
+        
       }
     }
   }
+}
+
+.shop_button_div {
+  display: flex;
+  justify-content: center; /* Zentriert den Inhalt horizontal */
+  align-items: center;
 }
