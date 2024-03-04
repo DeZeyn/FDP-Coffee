@@ -1,5 +1,6 @@
 import myFunction, { multiply } from "./myModule";
 import "./kontakt.js";
+import "./shop.js"
 
 myFunction();
 
