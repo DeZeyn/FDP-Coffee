@@ -1,13 +1,15 @@
 // import productData from "../public/products.json";
-import productImgPath from "../images/FEND_Coffee_Costa-Rica 1 (1).jpg"
+import productImgPath from "../images/FEND_Coffee_Costa-Rica 1 (1).jpg";
 import { fetchProducts } from "./productHelpers.js";
 
 const buildProductHtml = async () => {
   const productData = await fetchProducts();
-  
-  return productData.map(
-    (product) => `
-    <a href="/product/index.html?id=${product.id}" class="product">
+  console.log(productData);
+
+  return productData
+    .map(
+      (product) => `
+    <a href="/sub-page/product.html?id=${product.id}" class="product">
       <img src="${productImgPath}" alt="product image">
       <div class="product-name">
         ${product.productName}
@@ -16,22 +18,22 @@ const buildProductHtml = async () => {
         ${product.price / 100}€
       </div>
     </a>
-  `).join("");
-}
+  `
+    )
+    .join("");
+};
 
 const shop = async () => {
   const productHtml = await buildProductHtml();
-  
+  console.log (productHtml);
+
   const productContainer = document.querySelector(".product-container");
   productContainer.innerHTML = productHtml;
-}
+};
 
 shop();
 
-
-
-// // Alles Was ich bisher gemacht habe. 
-
+// // Alles Was ich bisher gemacht habe.
 
 // // Extrahieren der Produkt-ID aus der URL-Parameter
 // const urlParams = new URLSearchParams(window.location.search);
@@ -142,5 +144,3 @@ shop();
 // // Machen addToCart und displayCart global verfügbar
 // window.addToCart = addToCart;
 // window.displayCart = displayCart;
-
-
