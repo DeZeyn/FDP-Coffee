@@ -54,6 +54,14 @@ body {
       font-weight: var(--font-weight-normal);
       line-height: var(--line-height-body);
     }
+
+    #message {
+      font-family: var(--font-family);
+      font-size: var(--body-text-m-font-size);
+      font-weight: var(--font-weight-normal);
+      line-height: var(--line-height-body);
+      padding: 3rem 0 3rem 1rem;
+    }
   }
 
   &__input {
@@ -73,14 +81,6 @@ body {
 
   &__input {
     padding: 0 0 0 1rem;
-  }
-
-  #message {
-    font-family: var(--font-family);
-    font-size: var(--body-text-m-font-size);
-    font-weight: var(--font-weight-normal);
-    line-height: var(--line-height-body);
-    padding: 3rem 0 3rem 1rem;
   }
 }
 
@@ -129,11 +129,10 @@ body {
     }
 
     li {
-        padding: 0.5rem 0 0.5rem 1rem;
+      padding: 0.5rem 0 0.5rem 1rem;
       a {
         text-decoration: none;
         color: black;
-        
       }
     }
   }

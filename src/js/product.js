@@ -10,6 +10,7 @@ const product = async () => {
   const product = productData.find(
     (singleProduct) => singleProduct.id === parseInt(productId, 10)
   );
+  console.log (product)
 
   const productHtml = `
     <div class="product">
@@ -30,5 +31,4 @@ const product = async () => {
   productContainer.innerHTML = productHtml;
 };
 
-console.log("Skript geladen");
 product();

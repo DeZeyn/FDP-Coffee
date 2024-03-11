@@ -11,8 +11,98 @@
     {{> navbar}}
     <main class="kontakt-content">
       <h2>Du hast Fragen? Schreib uns gern!</h2>
+
       <div class="kontakt-content__form">
-        <form action="#" class="form">
+        <form
+          id="my-form"
+          action="https://formspree.io/f/xeqyzznq"
+          method="POST"
+        >
+          <div class="form__group">
+            <label for="name" class="form__label">Name*</label>
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Name"
+              id="name"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <label for="email" class="form__label">E-Mail*</label>
+            <input
+              type="email"
+              name="email"
+              class="form__input"
+              placeholder="E-mail"
+              id="email"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <label for="phone" class="form__label">Telefonnummer</label>
+            <input
+              type="tel"
+              name="phone"
+              class="form__input"
+              placeholder="Telefonnummer"
+              id="phone"
+            />
+          </div>
+
+          <div class="form__group">
+            <div class="dropdown">
+              <button class="dropdown__button">
+                Dein Betreff
+                <span class="dropdown__icon"
+                  ><img src="../images/›.svg" alt=""
+                /></span>
+              </button>
+              <div class="dropdown__content">
+                <ul>
+                  <li><a href="#">Fragen zur Lieferung</a></li>
+                  <li><a href="#">Fragen zum Produkt</a></li>
+                  <li><a href="#">Vertriebsfragen</a></li>
+                  <li><a href="#">einfach nur so!</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Verstecktes Input-Feld -->
+          <input type="hidden" id="selectedDropdownValue" name="Dein Betreff" />
+
+          <div class="form__group">
+            <label for="message">Deine Nachricht</label>
+            <textarea
+              id="message"
+              name="message"
+              class="form__input"
+              placeholder="Was hast du auf dem Herzen?"
+              required
+            ></textarea>
+          </div>
+          <div class="form__group">
+            <input
+              type="checkbox"
+              id="dataConsent"
+              name="Datenschutzerklärung"
+              class="consent__checkbox"
+              required
+            />
+            <label for="dataConsent" class="consent__label"
+              >Ich akzeptiere die Datenschutzerklärung</label
+            >
+          </div>
+          <div class="shop_button_div">
+            <button class="shop_button" id="my-form-button">abschicken</button>
+          </div>
+          <p id="my-form-status"></p>
+        </form>
+      </div>
+
+      <!-- <div class="kontakt-content__form">
+        <form action="https://formspree.io/f/xeqyzznq" method="POST" class="form" >
           <div class="form__group">
             <label for="name" class="form__label">Name*</label>
             <input
@@ -77,8 +167,9 @@
               <button class="shop_button">abschicken</button>
             </div>
           </div>
+          <p id="my-form-status"></p>
         </form>
-      </div>
+      </div> -->
     </main>
     {{> footer}}
     <script src="../js/kontakt.js" type="module"></script>
